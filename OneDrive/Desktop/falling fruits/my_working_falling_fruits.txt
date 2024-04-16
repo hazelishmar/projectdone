@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Game</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #add8e6, #87CEEB); /* Gradient from light blue to dark blue */
+        }
+
+        .container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .score {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            font-size: 24px;
+        }
+
+        .item {
+            font-size: 1.2rem;
+            width: 8rem;
+            height: 8rem;
+            margin: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .apple {
+            width: 6em;
+            height: 5em;
+            background-color: #ff4355;
+            box-shadow: inset 0.2em -0.2em #cc1022;
+            border-radius: 2em 2em 3em 3em;
+            position: absolute;
+            top: -5em;
+            left: 0.3em;
+            animation: fallApple 5s linear infinite;
+        }
+
+        .apple:before {
+            top: -0.2em;
+            left: 1.8em;
+            content: "";
+            width: 4.1em;
+            height: 2.75em;
+            background-color: inherit;
+            border-radius: 3em 3em 0 0;
+            position: absolute;
+            box-shadow: -1.5em 0 0 #ff4355, inset .2em 0.2em #ff4355;
+        }
+
+        .apple:after {
+            content: "";
+            width: 0.2em;
+            height: 1em;
+            background-color: brown;
+            position: absolute;
+            z-index: 2;
+            top: -0.5em;
+            left: 3em;
+        }
+
+        .orange {
+            width: 5.6em;
+            height: 5.6em;
+            border-radius: 50%;
+            background-color: #ffb526;
+            box-shadow: inset 0.2em -0.2em #cc8a0c;
+            position: absolute;
+            top: -5em;
+            left: 0.3em;
+            animation: fallOrange 7s linear infinite;
+        }
+
+        .orange:before {
+            content: "";
+            position: absolute;
+            top: -1em;
+            left: 3em;
+            height: 0;
+            width: 0;
+            border: 1em solid #539e3d;
+            border-radius: 50% 0 50% 0;
+            border-bottom-color: #437512;
+            border-right-color: #437512;
+        }
+
+        .banana {
+            width: 6em;
+            height: 6em;
+            background-color: transparent;
+            box-shadow: -1.1em 1.1em 0 0 #fcd110;
+            border-radius: 50%;
+            position: absolute;
+            top: -5em;
+            left: 1.6em;
+            animation: fallBanana 6s linear infinite;
+        }
+
+        .banana:before {
+            content: "";
+            width: 0.3em;
+            height: 0.3em;
+            transform: rotate(45deg);
+            background-color: #937714;
+            position: absolute;
+            top: 5.4em;
+            left: 4.3em;
+            z-index: 1;
+        }
+
+        .banana:after {
+            content: "";
+            width: 0.4em;
+            height: 0.8em;
+            transform: rotate(31deg);
+            background-color: #b3bb03;
+            position: absolute;
+            top: 1.1em;
+            left: 0.2em;
+            z-index: 1;
+        }
+
+        @keyframes fallApple {
+            0% { top: -5em; }
+            100% { top: 100%; }
+        }
+
+        @keyframes fallOrange {
+            0% { top: -5em; }
+            100% { top: 100%; }
+        }
+
+        @keyframes fallBanana {
+            0% { top: -5em; }
+            100% { top: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="score">Apple: <span id="appleScore">0</span>, Banana: <span id="bananaScore">0</span>, Orange: <span id="orangeScore">0</span></div>
+    <div class="container">
+        <div class="item">
+            <div class="apple"></div>
+        </div>
+        <div class="item">
+            <div class="orange"></div>
+        </div>
+        <div class="item">
+            <div class="banana"></div>
+        </div>
+    </div>
+
+    <script>
+        let appleScore = 0;
+        let orangeScore = 0;
+        let bananaScore = 0;
+
+        document.querySelectorAll('.item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                const fruit = e.target.classList[0];
+                if (fruit === 'apple') {
+                    appleScore++;
+                    document.getElementById('appleScore').textContent = appleScore;
+                } else if (fruit === 'orange') {
+                    orangeScore++;
+                    document.getElementById('orangeScore').textContent = orangeScore;
+                } else if (fruit === 'banana') {
+                    bananaScore++;
+                    document.getElementById('bananaScore').textContent = bananaScore;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
