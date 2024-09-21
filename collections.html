@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Collection</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a styles.css file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+        .collection-item {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 0 0 auto;
+            width: 250px;
+        }
+        .collection-item img {
+            max-width: 100%;
+            border-radius: 5px;
+            height: auto;
+        }
+        .collection-item h3 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+        .collection-item p {
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Clothing Collection</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="collection-item">
+            <img src="C:\Users\amrita kumari\OneDrive\Desktop\FINAL YEAR PROJECT\projectdone\images\dress1.jpg" alt="Summer Dress">
+            <h3>Summer Dress</h3>
+            <p>A beautiful summer dress, perfect for any occasion.</p>
+        </div>
+        <div class="collection-item">
+            <img src="C:\Users\amrita kumari\OneDrive\Desktop\FINAL YEAR PROJECT\projectdone\images\casual-top.jpg" alt="Casual Top">
+            <h3>Casual Top</h3>
+            <p>A stylish casual top, ideal for everyday wear.</p>
+        </div>
+        <div class="collection-item">
+            <img src="C:\Users\amrita kumari\OneDrive\Desktop\FINAL YEAR PROJECT\projectdone\images\scarf.jpg" alt="Chic Scarf">
+            <h3>Chic Scarf</h3>
+            <p>An elegant scarf that adds a touch of style to any outfit.</p>
+        </div>
+        <!-- Add more clothing items here -->
+    </div>
+    <footer>
+        <p>&copy; 2024 My Clothing Collection</p>
+    </footer>
+</body>
+</html>

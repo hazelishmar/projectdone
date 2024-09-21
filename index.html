@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store - Shop</title>
+    <style>
+        /* CSS styles for the page */
+
+        /* Reset some basic elements */
+        body, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* General page layout and styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .category {
+            margin-bottom: 20px;
+        }
+
+        .category h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .category ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .category ul li {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .category ul li a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .category ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .small-image {
+            width: 50px; /* Adjust the size as needed */
+            height: auto;
+            display: block;
+            margin: 0 auto 5px auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 2px;
+            background-color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        footer ul li {
+            margin: 0 15px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="women">
+            <h1>Women</h1>
+            <div class="category">
+                <h2>Clothing</h2>
+                <ul>
+                    <li><a href="women/tops.html"><img src="images/tops.jpg" alt="Tops" class="small-image"> Tops</a></li>
+                    <li><a href="women/dresses.html"><img src="images/dresses.jpg" alt="Dresses" class="small-image"> Dresses</a></li>
+                    <li><a href="women/pants.html"><img src="images/pants.jpg" alt="Pants & Skirts" class="small-image"> Pants & Skirts</a></li>
+                    <li><a href="women/outerwear.html"><img src="images/outerwear.jpg" alt="Outerwear" class="small-image"> Outerwear</a></li>
+                    <li><a href="women/activewear.html"><img src="images/activewear.jpg" alt="Activewear" class="small-image"> Activewear</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <h2>Shoes</h2>
+                <ul>
+                    <li><a href="women/heels.html"><img src="images/heels.jpg" alt="Heels" class="small-image"> Heels</a></li>
+                    <li><a href="women/flats.html"><img src="images/flats.jpg" alt="Flats" class="small-image"> Flats</a></li>
+                    <li><a href="women/boots.html"><img src="images/boots.jpg" alt="Boots" class="small-image"> Boots</a></li>
+                    <li><a href="women/sneakers.html"><img src="images/sneakers.jpg" alt="Sneakers" class="small-image"> Sneakers</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <h2>Accessories</h2>
+                <ul>
+                    <li><a href="women/bags.html"><img src="images/bags.jpg" alt="Bags" class="small-image"> Bags</a></li>
+                    <li><a href="women/jewelry.html"><img src="images/jewelry.jpg" alt="Jewelry" class="small-image"> Jewelry</a></li>
+                    <li><a href="women/scarves.html"><img src="images/scarves.jpg" alt="Scarves & Hats" class="small-image"> Scarves & Hats</a></li>
+                    <li><a href="women/belts.html"><img src="images/belts.jpg" alt="Belts" class="small-image"> Belts</a></li>
+                    <li><a href="women/sunglasses.html"><img src="images/sunglasses.jpg" alt="Sunglasses" class="small-image"> Sunglasses</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="men">
+            <h1>Men</h1>
+            <div class="category">
+                <h2>Clothing</h2>
+                <ul>
+                    <li><a href="men/shirts.html"><img src="images/shirts.jpg" alt="Shirts" class="small-image"> Shirts</a></li>
+                    <li><a href="men/pants.html"><img src="images/pants2.jpg" alt="Pants" class="small-image"> Pants</a></li>
+                    <li><a href="men/suits.html"><img src="images/suits.jpg" alt="Suits & Blazers" class="small-image"> Suits & Blazers</a></li>
+                    <li><a href="men/outerwear.html"><img src="images/outerwear2.jpg" alt="Outerwear" class="small-image"> Outerwear</a></li>
+                    <li><a href="men/activewear.html"><img src="images/activewear2.jpg" alt="Activewear" class="small-image"> Activewear</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <h2>Shoes</h2>
+                <ul>
+                    <li><a href="men/dress-shoes.html"><img src="images/dress-shoes.jpg" alt="Dress Shoes" class="small-image"> Dress Shoes</a></li>
+                    <li><a href="men/casual-shoes.html"><img src="images/casual-shoes.jpg" alt="Casual Shoes" class="small-image"> Casual Shoes</a></li>
+                    <li><a href="men/boots.html"><img src="images/boots.jpg" alt="Boots" class="small-image"> Boots</a></li>
+                    <li><a href="men/sneakers.html"><img src="images/sneakers.jpg" alt="Sneakers" class="small-image"> Sneakers</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <h2>Accessories</h2>
+                <ul>
+                    <li><a href="men/watches.html"><img src="images/watches.jpg" alt="Watches" class="small-image"> Watches</a></li>
+                    <li><a href="men/wallets.html"><img src="images/wallets.jpg" alt="Wallets" class="small-image"> Wallets</a></li>
+                    <li><a href="men/ties.html"><img src="images/ties.jpg" alt="Ties & Bow Ties" class="small-image"> Ties & Bow Ties</a></li>
+                    <li><a href="men/hats.html"><img src="images/hats.jpg" alt="Hats & Caps" class="small-image"> Hats & Caps</a></li>
+                    <li><a href="men/sunglasses.html"><img src="images/sunglasses.jpg" alt="Sunglasses" class="small-image"> Sunglasses</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <p>&copy; 2024 Fashion Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
